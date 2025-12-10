@@ -1,0 +1,267 @@
+/*
+ * Custom AI theme for EKLAVYA RESEARCH LAB
+ * Light blue → dark blue theme
+ */
+
+:root {
+    /* Overall palette */
+    --ai-bg-gradient: linear-gradient(135deg, #e0f2ff 0%, #c3dafe 40%, #0b3b8c 100%);
+    --ai-primary: #0b3b8c;        /* main dark blue */
+    --ai-accent: #4f8df5;         /* lighter bright blue */
+    --ai-text-main: #0b1220;      /* almost-black indigo */
+    --ai-text-muted: #4b5563;     /* greyish text */
+    --ai-card-bg: #ffffff;        /* light cards */
+    --ai-card-border: rgba(15, 23, 42, 0.08);
+    --ai-shadow-soft: 0 18px 45px rgba(15, 23, 42, 0.12);
+}
+
+/* Global */
+body {
+    background: var(--ai-bg-gradient);
+    color: var(--ai-text-main);
+}
+
+/* Fix Bootstrap light background (keep it light) */
+.bg-light {
+    background-color: rgba(255, 255, 255, 0.96) !important;
+}
+
+/* Top nav */
+#templatemo_nav_top {
+    background: linear-gradient(90deg, #0b3b8c, #102347) !important;
+    border-bottom: 1px solid rgba(15, 23, 42, 0.18);
+}
+
+#templatemo_nav_top .top-left-info i {
+    color: var(--ai-accent);
+}
+
+/* Main navbar */
+.ai-navbar {
+    background: rgba(255, 255, 255, 0.98) !important;
+    backdrop-filter: blur(6px);
+    border-bottom: 1px solid rgba(15, 23, 42, 0.08);
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+}
+
+#templatemo_main_nav a {
+    color: var(--ai-text-main) !important;
+    font-weight: 400 !important;
+}
+
+#templatemo_main_nav a:hover,
+#templatemo_main_nav a.active {
+    color: var(--ai-primary) !important;
+}
+
+/* Logo */
+.brand-logo {
+    height: 40px;
+    width: auto;
+}
+
+.logo-text {
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    font-size: 0.95rem;
+    color: var(--ai-primary);
+}
+
+/* Auth buttons (if used) */
+.ai-auth-buttons .btn-outline-light {
+    border-color: rgba(148, 163, 184, 0.7);
+    color: var(--ai-text-main);
+    background: transparent;
+}
+
+.ai-auth-buttons .btn-outline-light:hover {
+    background: rgba(79, 141, 245, 0.08);
+}
+
+/* Brand / “success” color overrides to blue */
+.text-success {
+    color: var(--ai-primary) !important;
+}
+
+.btn-success {
+    background: linear-gradient(135deg, var(--ai-accent), var(--ai-primary)) !important;
+    border: none !important;
+    color: #f9fafb !important;
+    box-shadow: 0 0 18px rgba(79, 141, 245, 0.45);
+}
+
+.btn-success:hover {
+    filter: brightness(1.05);
+}
+
+.bg-success {
+    background-color: var(--ai-primary) !important;
+}
+
+.border-success {
+    border-color: var(--ai-primary) !important;
+}
+
+/* Hero section */
+.ai-hero {
+    background: linear-gradient(135deg, #e0f2ff 0%, #c3dafe 35%, #0b3b8c 100%) !important;
+}
+
+.ai-hero .hero-img {
+    filter: drop-shadow(0 20px 35px rgba(15, 23, 42, 0.35));
+}
+
+.hero-title {
+    color: var(--ai-primary) !important;
+    text-shadow: 0 0 18px rgba(79, 141, 245, 0.6);
+}
+
+.hero-subtitle {
+    color: #0b1220 !important;
+}
+
+.hero-text {
+    color: var(--ai-text-muted);
+}
+
+/* Hero indicators & arrows */
+#template-mo-zay-hero-carousel .carousel-indicators li {
+    margin-top: -40px;
+    background-color: rgba(148, 163, 184, 0.6);
+    width: 10px;
+    height: 10px;
+    border-radius: 999px;
+}
+
+#template-mo-zay-hero-carousel .carousel-indicators li.active {
+    background: linear-gradient(135deg, var(--ai-accent), var(--ai-primary));
+}
+
+#template-mo-zay-hero-carousel .carousel-control-next i,
+#template-mo-zay-hero-carousel .carousel-control-prev i {
+    color: var(--ai-primary) !important;
+    font-size: 2.6em !important;
+}
+
+/* Sections */
+.section-title {
+    color: var(--ai-primary);
+}
+
+.section-text {
+    color: var(--ai-text-muted);
+    max-width: 540px;
+    margin: 0 auto;
+}
+
+/* Learning paths images */
+.ai-path-img {
+    box-shadow: 0 15px 35px rgba(15, 23, 42, 0.18);
+}
+
+/* Cards / courses / service boxes */
+.ai-card {
+    background: var(--ai-card-bg);
+    border: 1px solid var(--ai-card-border);
+    border-radius: 20px;
+    box-shadow: var(--ai-shadow-soft);
+    overflow: hidden;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.ai-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 22px 65px rgba(15, 23, 42, 0.18);
+    border-color: rgba(79, 141, 245, 0.8);
+}
+
+.ai-card .card-img-top {
+    border-bottom: 1px solid rgba(15, 23, 42, 0.06);
+}
+
+.ai-course-title {
+    font-size: 1.05rem !important;
+}
+
+/* Ratings (if you use them) */
+.ai-rating i {
+    color: #fde047 !important; /* star yellow */
+}
+
+/* Text colors inside cards */
+.ai-card .card-text {
+    color: var(--ai-text-muted);
+}
+
+/* Footer */
+#ekl_footer,
+#tempaltemo_footer {
+    background: linear-gradient(135deg, #0b3b8c 0%, #020b3a 60%, #020617 100%) !important;
+}
+
+#ekl_footer a,
+#tempaltemo_footer a {
+    color: #dbeafe !important; /* light blue text */
+}
+
+#ekl_footer a:hover,
+#tempaltemo_footer a:hover {
+    color: var(--ai-accent) !important;
+}
+
+#ekl_footer .border-light,
+#tempaltemo_footer .border-light {
+    border-color: rgba(148, 163, 184, 0.4) !important;
+}
+
+#ekl_footer ul.footer-icons li,
+#tempaltemo_footer ul.footer-icons li {
+    width: 2.6em;
+    height: 2.6em;
+    line-height: 2.6em;
+    border-color: rgba(148, 163, 184, 0.7) !important;
+}
+
+#ekl_footer ul.footer-icons li:hover,
+#tempaltemo_footer ul.footer-icons li:hover {
+    background-color: rgba(15, 23, 42, 0.85);
+}
+
+#ekl_footer ul.footer-icons li:hover i,
+#tempaltemo_footer ul.footer-icons li:hover i {
+    color: var(--ai-accent);
+}
+
+/* Subscribe box */
+#ekl_footer .form-control.bg-dark,
+#tempaltemo_footer .form-control.bg-dark {
+    background-color: #020b3a !important;
+    border-color: rgba(79, 141, 245, 0.8);
+    color: #e5e7eb;
+}
+
+/* Small tweaks */
+.navbar-toggler {
+    border-color: rgba(148, 163, 184, 0.4) !important;
+}
+
+.navbar-toggler-icon {
+    filter: invert(0.4);
+}
+
+.text-muted {
+    color: var(--ai-text-muted) !important;
+}
+
+h2 .fa-arrow-right {
+    color: var(--ai-accent);   /* uses your light blue */
+    font-size: 0.9em;
+}
+
+.linkedin-link i {
+    font-family: "Font Awesome 6 Brands" !important;
+    font-weight: 400;
+}
+
+

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>About | EKLAB.AI</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS from CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+          crossorigin="anonymous">
+
+    <!-- Google Font -->
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
+
+    <!-- Font Awesome from CDN -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+          integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkTtDWeTnX2zq8pt0VfvCGTMl6U+Y6wR9Z9+8qL+UY8j+YlYkPpJdKfug=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Custom theme -->
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+
+<body>
+
+    <!-- Navbar (About active) -->
+    <nav class="navbar navbar-expand-lg navbar-light shadow ai-navbar">
+        <div class="container d-flex justify-content-between align-items-center">
+            <a class="navbar-brand logo h1 align-self-center d-flex align-items-center" href="../index.html">
+                <span class="logo-text">EKLAB.AI</span>
+            </a>
+
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#eku_main_nav" aria-controls="eku_main_nav"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="eku_main_nav">
+                <ul class="navbar-nav ms-auto d-flex align-items-center gap-3">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="areas.html">Focus Areas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="publications.html">Publications</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="support.html">Support</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacts.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="about-eklabai" class="py-5">
+        <div class="container">
+            <h2>About EKLAB.AI</h2>
+
+            <p>
+                EKLAB.AI is an independent research initiative focused on the intersection of biology, data,
+                and artificial intelligence. The idea is simple: use modern computational tools to ask sharp
+                scientific questions, build transparent workflows, and share practical, reproducible research
+                with the community.
+            </p>
+
+            <p>
+                EKLAB.AI originally grew out of a personal project called <em>Eklavya Research Lab</em>.
+                The new name keeps that spirit of self-driven learning (&ldquo;Eklavya&rdquo;) but in a shorter,
+                modern form that reflects its core identity: an experimental lab built around code, models, and data.
+                &ldquo;EKLAB&rdquo; echoes &ldquo;Eklavya Lab&rdquo;, and &ldquo;.AI&rdquo; highlights the focus
+                on AI-guided discovery.
+            </p>
+
+            <p>
+                On a personal note, Eklavya is my son, and I started this project on his birthday.
+                The name is a reminder that this lab is built not just on science, but also on hope, responsibility,
+                and the idea of creating something meaningful for the next generation.
+            </p>
+
+            <p>
+                The work at EKLAB.AI spans structural biology, molecular modeling, simulation, and AI-assisted analysis.
+                This includes things like protein&ndash;ligand modeling, molecular dynamics, cryo-EM/cryo-ET data
+                interpretation, and machine-learning pipelines for drug discovery and biological systems. Wherever possible,
+                tools, scripts, and protocols are designed to be open, modular, and easy to adapt.
+            </p>
+
+            <p>
+                EKLAB.AI is not a large institute or company. It is a small, flexible research space that collaborates
+                with academic labs, students, and independent researchers. The goal is to show that serious, high-quality
+                science can also come from compact, agile setups&mdash;powered by curiosity, careful methods, and smart
+                use of computation.
+            </p>
+<h3 class="mt-4 mb-3">Who we are</h3>
+<p>
+    EKLAB.AI is a small, independent research lab built around curiosity,
+    careful methods, and real-world problems. It is run by a Dr. <a href="https://www.linkedin.com/in/YOUR-LINKEDIN-ID" target="_blank" rel="noopener">
+    Sanjay Kumar
+</a> with
+    experience in structural biology, computational chemistry, and AI-driven
+    analysis, working with students, clinicians, and researchers on flexible,
+    project-based collaborations.
+</p>
+<p>
+    Instead of a large institute, EKLAB.AI works like a focused studio:
+    small teams, clear questions, transparent workflows, and results that
+    others can reproduce, reuse, and build on.
+</p>
+        </div>
+
+
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light fixed-bottom" id="ekl_footer">
+        <div class="container">
+            <p class="text-center mb-0 py-2">
+                EKLAB.AI &copy; <span id="year"></span>
+            </p>
+        </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+
+</body>
+</html>
