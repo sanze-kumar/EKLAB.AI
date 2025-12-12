@@ -69,21 +69,86 @@
         </div>
     </nav>
 
-    <!-- Publications Content -->
-    <section class="py-5">
-        <div class="container">
-            <h1 class="h1 section-title mb-4">Publications</h1>
+  <!-- Publications Content -->
+<section class="py-5">
+    <div class="container">
+        <h1 class="h1 section-title mb-4">Publications & Tools</h1>
 
-            <div class="row">
-                <div class="col-md-6 mb-4">
-                    <h5>2025</h5>
-                    <p class="section-text">
-                        Working on it...
-                    </p>
+        <!-- Tools as cards -->
+        <h3 class="h3 mb-4">Tools</h3>
+        <div class="row g-4">
+            <!-- Tool 1 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card ai-card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title mb-2">xvg-to-report.py</h5>
+                        <p class="card-text section-text mb-0">
+                            Cleans GROMACS <code>.xvg</code> output files, converts them to CSV,
+                            and generates simple PNG plots for quick MD analysis.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tool 2 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card ai-card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title mb-2">DockBatch.py</h5>
+                        <p class="card-text section-text mb-0">
+                            Runs multiple ligand docking jobs in a single command using
+                            AutoDock and Vina, and organizes results for fast screening.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tool 3 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card ai-card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title mb-2">MMPBSA_Energy_Table_Plotter.py</h5>
+                        <p class="card-text section-text mb-0">
+                            Takes MM-PBSA energy tables and creates publication-ready
+                            figures of energy components and total binding energies.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
+
+        <!-- Publications as cards -->
+        <h3 class="h3 mt-5 mb-4">Publications</h3>
+        <div class="row g-4">
+            <!-- Example year card: 2025 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card ai-card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title mb-2">2025</h5>
+                        <p class="card-text section-text mb-0">
+                            Updated soon...<br>
+                            1. <br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- You can duplicate this block for other years -->
+            <!--
+            <div class="col-md-6 col-lg-4">
+                <div class="card ai-card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title mb-2">2024</h5>
+                        <p class="card-text section-text mb-0">
+                            List of 2024 publications…
+                        </p>
+                    </div>
+                </div>
+            </div>
+            -->
+        </div>
+    </div>
+</section>
 
     <!-- Footer -->
     <footer class="bg-dark text-light fixed-bottom" id="ekl_footer">
@@ -102,3 +167,4 @@
 
 </body>
 </html>
+
